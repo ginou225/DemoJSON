@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
+ 
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+<script>
+
+
+
+//POST
+
+var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
+var theUrl = "https://candidate.hubteam.com/candidateTest/v3/problem/result?userKey=acb46284e34a5d9d5cf40b155ddf";
+xmlhttp.open("POST", theUrl);
+xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+xmlhttp.send(JSON.stringify({ "countries": [
+          {
+            "attendeeCount": 1,
+            "attendees": [
+            "cbrenna@hubspotpartners.com"
+            ],
+            "name": "Ireland",
+            "startDate": "2017-04-29",
+             "startDate": "2017-04-30"
+          },
+          {
+            "attendeeCount": 2,
+            "attendees": [
+            "eauther@hubspotpartners.com",
+            "ddaignault@hubspotpartners.com"],
+            "name": "United States",
+            "startDate": null
+            
+          },
+          {
+            "attendeeCount": 7,
+            "attendees": [
+            "omajica@hubspotpartners.com",
+            "taffelt@hubspotpartners.com",
+            "tmozie@hubspotpartners.com",
+            "wzartman@hubspotpartners.com",
+            "sfilipponi@hubspotpartners.com",
+            "ryarwood@hubspotpartners.com",
+            "jgustison@hubspotpartners.com"
+            ],
+            "name": "Spain",
+            "startDate": "2017-04-29",
+            "startDate": "2017-04-30"
+          }
+            ]
+          })
+);
+ </script>
+
+ <div id="statusCode"></div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+</body>
+</html>
