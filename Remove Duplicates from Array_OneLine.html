@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
+
+  </head>
+  <body>
+      <h1>Push Sort</h1>
+
+
+  <script>
+    /* This method creates a new array and only pushes unique values*/
+    let sums = [1,2,5,2,1,8];
+    /* JS ES6 has introduced new data type called set, set only stores unique values by default*/
+
+    /* this is not going to come out as an array but the answer is right*/
+    let bSet = new Set(sums);
+
+   /* console.log(bSet)*/
+
+    /* To get answer in array*/
+    console.log([...new Set(sums)]);
+  </script>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+</body>
+</html>

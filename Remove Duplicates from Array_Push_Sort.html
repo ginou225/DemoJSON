@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
+
+  </head>
+  <body>
+      <h1>Push Sort</h1>
+
+
+  <script>
+    /* This method creates a new array and only pushes unique values*/
+    let a = [1,2,5,2,1,8];
+    let b =[];
+    /* you can do the length in the loop but it's too expensive cause it will calculate the lenght every time it runs instead mae a variable*/
+    let len = a.length;
+
+    a.sort();/* this will sort array [1,1,2,2,5,8]*/
+     let _temp;
+
+     for (let i = 0; i = len; i++) {
+       if (a[i] !== _temp){
+        b.push(a[i]);
+        _temp = a[i];
+       }
+     }
+
+    console.log(b);
+  </script>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+</body>
+</html>
