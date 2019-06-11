@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+<h2>Use the XMLHttpRequest to get the content of a file.</h2>
+<p>Convert a string into a date, using the reviver function:</p>
+
+<p id="demo"></p>
+
+<!-- https://www.youtube.com/watch?v=Oive66jrwBs -->
+
+<script>
+
+
+$( document ).ready(function() {
+	$.ajax({
+      url: 'https://randomuser.me/api/?results=1',
+      dataType: 'json',
+      success: function(data) {
+  	  var obj = JSON.parse(data);
+  	  document.getElementById("demo").innerHTML = obj.name + ", " + obj.first + " is from " + obj.last; 
+    
+  }
+});
+    
+});
+</script>
+
+</body>
+</html>
